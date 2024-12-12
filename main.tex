@@ -75,6 +75,18 @@
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}} % Dots for subsections
 \renewcommand{\cftdotsep}{0.5}
 
+% Command for inline code
+\newcommand{\inlinecode}[1]{%
+  \texttt{%
+    % set flexible interword space
+    \setlength{\spaceskip}{0.5em plus 1em minus 0.1em}%
+    % add some space with not as much flexibility, but only
+    % if some space precedes
+    \ifdim\lastskip>0pt \unskip\hspace{0.5em plus 0.5em minus 0.1em}\fi
+    #1
+  }%
+}
+
 \begin{document}
 
 \input{titlepage}
