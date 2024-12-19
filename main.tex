@@ -1,9 +1,9 @@
+% Template authors: Mateusz Grochowski, Bartosz Bizoń
+
+% Set document class
 \documentclass[11pt,a4paper]{article}
 
-% Przydatne stronki
-% https://tug.org/texinfohtml/latex2e.html#Font-sizes
-
-% Packages
+% Import packages
 \usepackage[polish]{babel}
 \usepackage{polski}
 \usepackage{amsmath}
@@ -31,12 +31,12 @@
 \usepackage{textcomp}
 \usepackage{indentfirst}
 
-% Setup document style
+% Set document style
 \renewcommand{\arraystretch}{1.2} % opcjonalnie zwiększa odstęp pionowy między wierszami
 \usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm,marginparwidth=1.75cm]{geometry}
 \renewcommand{\baselinestretch}{1.25} 
 
-% Section styles
+% Configure section styles
 \renewcommand\thesection{\arabic{section}.}
 \renewcommand\thesubsection{\thesection\arabic{subsection}.}
 \renewcommand\thesubsubsection{\thesection\arabic{subsection}.\arabic{subsubsection}.}
@@ -45,7 +45,7 @@
 \renewcommand{\thetable}{\thesection\arabic{table}}
 \renewcommand{\thefigure}{\thesection\arabic{figure}}
 
-% Configure listings package
+% Configure listings
 \renewcommand{\thelisting}{\thesection\arabic{listing}}
 \lstset{
   basicstyle=\ttfamily, % Use a~ typewriter font
@@ -54,15 +54,15 @@
   backgroundcolor=\color{white}, % Background color
 }
 
-% Caption styles
+% Configure caption styles
 \captionsetup[figure]{name=Rys, labelsep=period, font=it}
 \captionsetup[listing]{font=it}
 \captionsetup[table]{font=it}
 
-% Use times new roman
+% Use TimesNewRoman font
 \usepackage{times}
 
-% Customizing the Table of Contents
+% Customize the Table of Contents
 \renewcommand{\cftsecfont}{\bfseries}  % Section titles in bold
 \renewcommand{\cftsecpagefont}{\bfseries} % Section page numbers in bold
 \setlength{\cftbeforesecskip}{0pt} % Space between sections in the ToC
@@ -70,12 +70,12 @@
 \setlength{\cftsubsecindent}{16pt} % Indent subsections by 20pt
 \setlength{\cftbeforesubsecskip}{0pt}
 
-% Dots in Table of Contents
+% Add dots to Table of Contents
 \renewcommand{\cftsecleader}{\textbf{\cftdotfill{\cftdotsep}}} % Dots for sections
 \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}} % Dots for subsections
 \renewcommand{\cftdotsep}{0.5}
 
-% Command for inline code
+% Add command for inline code \inlinecode
 \newcommand{\inlinecode}[1]{%
   \texttt{%
     % set flexible interword space
@@ -84,7 +84,7 @@
     % if some space precedes
     \ifdim\lastskip>0pt \unskip\hspace{0.5em plus 0.5em minus 0.1em}\fi
     #1
-  }%
+  }
 }
 
 \begin{document}
