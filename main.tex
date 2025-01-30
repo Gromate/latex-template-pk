@@ -1,34 +1,81 @@
 % Template authors: Mateusz Grochowski, Bartosz Bizoń
+% Github repository: https://github.com/Gromate/latex-template-pk
 
 % Set document class
 \documentclass[11pt,a4paper]{article}
 
-% Import packages
+%% Import packages
+
+% Provides support for multilingual documents, specifically Polish in this case.
 \usepackage[polish]{babel}
+
+% Enables Polish-specific typographic rules and hyphenation.
 \usepackage{polski}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{array}
-\usepackage[colorlinks=true, allcolors=black]{hyperref}
+
+% Ensures proper encoding of fonts, especially for Polish characters.
 \usepackage[T1]{fontenc}
-\usepackage{booktabs}
-\usepackage{textcomp, gensymb}
+
+% Essential for advanced mathematical typesetting.
+\usepackage{amsmath}
+
+% Allows the inclusion of graphics (e.g., images) in the document.
 \usepackage{graphicx}
+
+% Enhances table formatting with additional column types and alignment options.
+\usepackage{array}
+
+% Adds hyperlinks to the document, with all links colored black.
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+
+% Improves the quality of tables with professional-looking horizontal rules.
+\usepackage{booktabs}
+
+% Provides additional text symbols and degree symbols.
+\usepackage{textcomp, gensymb}
+
+% Provides better control over the placement of floating objects like figures and tables.
 \usepackage{float}
+
+% Enables subfigures with individual captions within a single figure environment.
 \usepackage{subcaption}
+
+% Ensures proper handling of quotations, especially in multilingual documents.
 \usepackage{csquotes}
+
+% Allows URLs to break across lines, improving readability in references.
 \usepackage{xurl}
+
+% Customizes the formatting of the table of contents, list of figures, and list of tables.
 \usepackage{tocloft}
+
+% Enhances captions for figures, tables, and other floating environments.
 \usepackage{caption}
+
+% Provides bold math symbols for use in mathematical expressions.
 \usepackage{bm}
-\usepackage{ragged2e} 
-\usepackage{tabularx} 
-\usepackage{float}   
+
+% Improves text alignment options, including ragged-right and ragged-left.
+\usepackage{ragged2e}
+
+% Creates tables with adjustable column widths, useful for complex layouts.
+\usepackage{tabularx}
+
+% Allows the inclusion of external PDF pages in the document.
 \usepackage{pdfpages}
+
+% Provides a way to include formatted source code listings in the document.
 \usepackage{listings}
-\usepackage{xcolor} 
+
+% Enables the use of colors in the document, useful for highlighting text or code.
+\usepackage{xcolor}
+
+% Offers syntax highlighting for source code, often used with the `minted` environment.
+% To use it on windows you need to install Python and libraries:
+% - Pygments
+% - latexminted
 \usepackage{minted}
-\usepackage{textcomp}
+
+% Ensures the first paragraph after a section title is indented, following Polish typographic conventions.
 \usepackage{indentfirst}
 
 % Set document style
@@ -100,6 +147,11 @@
 }
 
 \newpage
+
+% You can start writing document here
+% Example sections are presented below
+% Zacznij pisać tutaj
+% Przykładowe rozdziały zostały przedstawione poniżej
 
 \section{Cel i zakres pracy (Styl Nagłówek 1, Times New Roman 14)}
 \paragraph{}
