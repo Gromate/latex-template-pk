@@ -45,7 +45,7 @@ class TexFixer:
         result = line
         for word in self.__single_letter_words:
             prev_result = result
-            result = result.replace(f" {word} ", f" {word}~ ")
+            result = result.replace(f" {word} ", f" {word}~")
 
             if prev_result != result: self.__single_letter_counter += 1
         return result
